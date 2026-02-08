@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About the Creator | CarVault</title>
+    <meta name="description" content="Meet Pamudu Ranasinghe, the creator of CarVault - your vehicle's digital twin.">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-dark font-display text-[#f8f9fc] transition-colors duration-200">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#2d3748] bg-background-dark px-10 py-3 sticky top-0 z-50">
+                <a href="index.html" class="flex items-center gap-4 text-white">
+                    <div class="size-6 text-primary">
+                        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">CarVault</h2>
+                </a>
+                <div class="flex flex-1 justify-end gap-8">
+                    <div class="flex items-center gap-9">
+                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="index.html">Home</a>
+                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="roadmap.html">Updates</a>
+                        <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                            href="pricing.html">Pricing</a>
+                        <a class="text-sm font-medium leading-normal text-primary" href="about.html">About</a>
+                    </div>
+                    <a href="pricing.html"
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                        <span class="truncate">Get Started</span>
+                    </a>
+                </div>
+            </header>
+            <main class="flex-1">
+                <div class="w-full bg-background-dark pt-24 pb-16 px-10">
+                    <div class="max-w-[800px] mx-auto text-center">
+                        <div
+                            class="inline-block p-2 px-4 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6">
+                            The Architect
+                        </div>
+                        <h1 class="text-white text-5xl font-black leading-tight tracking-tight mb-6">
+                            Pamudu Ranasinghe
+                        </h1>
+                        <p class="text-gray-400 text-xl max-w-2xl mx-auto leading-relaxed italic">
+                            "I built CarVault because I struggled to manage my own vehicle data effectively and needed a
+                            better solution."
+                        </p>
+                    </div>
+                </div>
+                <div class="px-10 py-16">
+                    <div class="max-w-[800px] mx-auto">
+                        <div
+                            class="bg-[#1a202c] p-10 rounded-2xl border border-[#2d3748] shadow-sm flex flex-col items-center text-center">
+                            <span class="material-symbols-outlined text-primary text-5xl mb-6">engineering</span>
+                            <h2 class="text-2xl font-bold mb-4">The Visionary Mindset</h2>
+                            <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                                As a developer and automotive enthusiast, I saw a gap between technical possibility and
+                                everyday utility. CarVault is the result of applying clean design principles and robust
+                                engineering to solve a personal pain point that millions of car owners share.
+                            </p>
+                            <a class="flex items-center justify-center gap-3 w-fit px-8 min-h-[52px] bg-[#0077b5] hover:bg-[#005c8d] text-white rounded-xl font-bold transition-all shadow-md group"
+                                href="#">
+                                <svg class="size-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+                                    </path>
+                                </svg>
+                                <span>Connect on LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Section -->
+                <div class="px-10 py-16 bg-[#0b0f17]">
+                    <div class="max-w-[800px] mx-auto">
+                        <h2 class="text-3xl font-bold text-center mb-8">Get in Touch</h2>
+                        <div class="bg-[#1a202c] p-8 rounded-2xl border border-[#2d3748]">
+                            <form id="contactForm" class="space-y-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-300 mb-2"
+                                            for="contactName">Name</label>
+                                        <input type="text" id="contactName" name="name" required
+                                            class="w-full px-4 py-3 bg-background-dark border border-[#2d3748] rounded-lg focus:ring-2 focus:ring-primary focus:border-primary text-white"
+                                            placeholder="Your name">
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-300 mb-2"
+                                            for="contactEmail">Email</label>
+                                        <input type="email" id="contactEmail" name="email" required
+                                            class="w-full px-4 py-3 bg-background-dark border border-[#2d3748] rounded-lg focus:ring-2 focus:ring-primary focus:border-primary text-white"
+                                            placeholder="your@email.com">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-300 mb-2"
+                                        for="contactSubject">Subject</label>
+                                    <select id="contactSubject" name="subject"
+                                        class="w-full px-4 py-3 bg-background-dark border border-[#2d3748] rounded-lg focus:ring-2 focus:ring-primary focus:border-primary text-white">
+                                        <option value="General Inquiry">General Inquiry</option>
+                                        <option value="Partnership">Partnership Opportunity</option>
+                                        <option value="Press">Press / Media</option>
+                                        <option value="Support">Technical Support</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-300 mb-2"
+                                        for="contactMessage">Message</label>
+                                    <textarea id="contactMessage" name="message" rows="4" required
+                                        class="w-full px-4 py-3 bg-background-dark border border-[#2d3748] rounded-lg focus:ring-2 focus:ring-primary focus:border-primary text-white"
+                                        placeholder="How can we help you?"></textarea>
+                                </div>
+                                <button type="submit"
+                                    class="w-full bg-primary hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
+                                    <span class="material-symbols-outlined">send</span>
+                                    Send Message
+                                </button>
+                            </form>
+                            <p id="contactSuccess" class="hidden mt-4 text-green-500 text-center font-medium">✓ Message
+                                sent successfully! We'll get back to you soon.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-background-dark py-20 px-10 border-t border-[#2d3748]">
+                    <div class="max-w-[800px] mx-auto">
+                        <h2 class="text-sm font-bold uppercase tracking-[0.2em] mb-12 text-center text-gray-500">Built
+                            with Modern Excellence</h2>
+                        <div class="grid grid-cols-2 md:grid-cols-5 gap-10">
+                            <div class="flex flex-col items-center gap-3">
+                                <span class="material-symbols-outlined text-4xl text-primary">terminal</span>
+                                <span
+                                    class="text-xs font-bold uppercase tracking-widest text-gray-500">TypeScript</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-3">
+                                <span class="material-symbols-outlined text-4xl text-primary">database</span>
+                                <span
+                                    class="text-xs font-bold uppercase tracking-widest text-gray-500">PostgreSQL</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-3">
+                                <span class="material-symbols-outlined text-4xl text-primary">cloud</span>
+                                <span class="text-xs font-bold uppercase tracking-widest text-gray-500">AWS</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-3">
+                                <span class="material-symbols-outlined text-4xl text-primary">token</span>
+                                <span class="text-xs font-bold uppercase tracking-widest text-gray-500">Figma</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-3">
+                                <span class="material-symbols-outlined text-4xl text-primary">grid_view</span>
+                                <span class="text-xs font-bold uppercase tracking-widest text-gray-500">Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="bg-background-dark border-t border-[#2d3748] px-10 py-10">
+                <div class="max-w-[960px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div class="flex items-center gap-2">
+                        <div class="size-5 text-primary">
+                            <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <span class="font-bold">CarVault</span>
+                    </div>
+                    <div class="flex gap-6 text-sm text-gray-500">
+                        <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                        <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+                        <a class="hover:text-primary transition-colors" href="#">Contact</a>
+                    </div>
+                    <p class="text-sm text-gray-500">© 2024 CarVault. Built by Pamudu.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // Google Sheets form submission
+        const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL';
+
+        document.getElementById('contactForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const successMsg = document.getElementById('contactSuccess');
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin">sync</span> Sending...';
+
+            const formData = {
+                name: form.contactName.value,
+                email: form.contactEmail.value,
+                subject: form.contactSubject.value,
+                message: form.contactMessage.value,
+                type: 'Contact Form',
+                timestamp: new Date().toISOString()
+            };
+
+            try {
+                if (GOOGLE_SCRIPT_URL === 'YOUR_GOOGLE_APPS_SCRIPT_URL') {
+                    console.log('Form data (demo mode):', formData);
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                } else {
+                    await fetch(GOOGLE_SCRIPT_URL, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(formData)
+                    });
+                }
+                successMsg.classList.remove('hidden');
+                form.reset();
+            } catch (error) {
+                console.error('Error:', error);
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<span class="material-symbols-outlined">send</span> Send Message';
+            }
+        });
+    </script>
+</body>
+
+</html>

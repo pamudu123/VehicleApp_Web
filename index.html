@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>CarVault - Your Vehicle's Digital Twin</title>
+    <meta name="description"
+        content="The ultimate dashboard for your drive. Track maintenance, monitor fuel efficiency, and secure your vehicle's history in one secure vault.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f8f9fc",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "sans": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        body {
+        font-family: 'Inter', sans-serif;
+    }
+    .hero-gradient {
+        background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 100%);
+    }
+</style>
+</head>
+
+<body class="bg-background-dark text-white">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <header
+            class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-[#2a3441] bg-background-dark/80 backdrop-blur-md px-6 py-4 lg:px-20">
+            <a href="index.html" class="flex items-center gap-3 text-white">
+                <div class="size-8 text-primary">
+                    <span class="material-symbols-outlined text-4xl">local_taxi</span>
+                </div>
+                <h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">CarVault</h2>
+            </a>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-primary text-sm font-medium transition-colors" href="index.html">Home</a>
+                <a class="text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                    href="roadmap.html">Updates</a>
+                <a class="text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                    href="pricing.html">Pricing</a>
+                <a class="text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                    href="about.html">About</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="pricing.html"
+                    class="hidden md:flex cursor-pointer items-center justify-center rounded-lg px-6 py-2 bg-primary text-white text-sm font-bold shadow-lg hover:bg-primary/90 transition-all">
+                    Get Started
+                </a>
+                <button class="md:hidden p-2 text-gray-300" id="menuBtn">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden fixed inset-0 z-40 bg-background-dark/95 backdrop-blur-md pt-20 px-6">
+            <nav class="flex flex-col gap-4">
+                <a class="text-primary text-lg font-medium py-2" href="index.html">Home</a>
+                <a class="text-gray-300 text-lg font-medium py-2 hover:text-primary" href="roadmap.html">Updates</a>
+                <a class="text-gray-300 text-lg font-medium py-2 hover:text-primary" href="pricing.html">Pricing</a>
+                <a class="text-gray-300 text-lg font-medium py-2 hover:text-primary" href="about.html">About</a>
+            </nav>
+        </div>
+
+        <main class="flex-grow flex flex-col">
+            <section class="relative w-full h-[85vh] min-h-[600px] overflow-hidden flex items-end">
+                <img alt="Confident young woman standing next to a modern luxury car in an urban city setting"
+                    class="absolute inset-0 w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB61kGL4aPU2ZHK3tCv3xSHWTMpDMW80sSX26G2UEzqALdVjzidkKI4RYw146JwoQAqxruiN_0SeWFooQYAswjfPJSORRRkUOV-RXCoULJT3EEYeOQ_GSXT-2eXEVUUyJYKQrIMc3EQcLka76UdurQzU5Jd1QIXR173FAoDBNqy9MesC0xvg6rIAfXQcqEMUyQV9Xm5xDYB-KkDXGXykYKxHJRWUaKPOX75rSaqiFKoQJSVyo-xXeIo8mS56I3NuNt9KM7MxWB7SWs" />
+                <div class="absolute inset-0 hero-gradient"></div>
+                <div class="relative z-10 w-full px-6 py-12 lg:px-20 lg:py-24 max-w-[1280px] mx-auto">
+                    <div class="max-w-2xl text-white">
+                        <div
+                            class="inline-flex items-center gap-2 rounded-full bg-primary/20 backdrop-blur-md px-3 py-1 mb-6 border border-white/20">
+                            <span class="relative flex h-2 w-2">
+                                <span
+                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                            </span>
+                            <span class="text-xs font-semibold text-white">New v2.0 Released</span>
+                        </div>
+                        <h1 class="text-5xl font-black leading-[1.1] tracking-tight mb-6 lg:text-7xl">
+                            CarVault: Your Vehicle's <span class="text-primary">Digital Twin</span>
+                        </h1>
+                        <p class="text-lg text-gray-200 leading-relaxed mb-10 max-w-lg">
+                            The ultimate dashboard for your drive. Track maintenance, monitor fuel efficiency, and
+                            secure your vehicle's history in one secure vault.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="#"
+                                class="flex items-center justify-center gap-3 bg-white text-[#0d121b] px-8 py-4 rounded-xl hover:bg-gray-100 transition-colors w-full sm:w-auto min-w-[200px]">
+                                <span class="material-symbols-outlined text-2xl">ios</span>
+                                <div class="flex flex-col items-start leading-none">
+                                    <span class="text-[10px] font-medium opacity-80">Download on the</span>
+                                    <span class="text-base font-bold">App Store</span>
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="flex items-center justify-center gap-3 bg-primary text-white px-8 py-4 rounded-xl hover:bg-primary/90 transition-colors w-full sm:w-auto min-w-[200px]">
+                                <span class="material-symbols-outlined text-2xl">android</span>
+                                <div class="flex flex-col items-start leading-none">
+                                    <span class="text-[10px] font-medium opacity-80">Get it on</span>
+                                    <span class="text-base font-bold">Google Play</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mt-12 flex items-center gap-4 text-sm text-gray-300">
+                            <div class="flex -space-x-2">
+                                <div class="size-8 rounded-full border-2 border-white/20 bg-gray-200 bg-cover"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCKNK0UWfQ19I3WfvAXmW95g8V1NSbRTVoYZMN60uv5zN3kPidISdRYZ9L0AScy9A1qFxJUgNRo_MD6rwXPrpatBgg1VrrI5Rg6yFHqO1FoLAPa2F3v9l0_d9cwZoLPpH792QaFrWzOn88EOs3G1MONdJfSTDoiPO7RzrRJ4lFq388-7XCvXkJ11IN7AOtPoP1L8N2dCpJESDSFYidCC8UcniVRPRZZUuNfcXcB1BDnpNJO3Axb9TpB6g7Khf3a7htxQzsiyiQ9Qzk')">
+                                </div>
+                                <div class="size-8 rounded-full border-2 border-white/20 bg-gray-200 bg-cover"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8LPZAvrfu1uiWGa4sTeViIS0alA-8_65oB-NMRJsYN4SOmVuVTx_4Zub1-Cpk8jKXV2MKkyjfomq5ssD118XsvwefLa6JTaloYh8zb1icaBtSw8ShJ3BlKv18vRvmwV4knPAXmUJOQVHlOxjKwfYX-m_0soRj_hXrHeNTMG4ls_zyQbcefMv8LzoITAw8prdcjJCuwQCE-IPWLF52nod8nDZX9LcmfrITnaR4SYB6gk5YVSLsbsXiIi4gluEKXPZuEZuIxIKW_Zw')">
+                                </div>
+                                <div class="size-8 rounded-full border-2 border-white/20 bg-gray-200 bg-cover"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAFkqPxJCbR33TsYLXeJv9TSYZiwhS1uheGO3tZG5UZGMzQFlHZvZWNXU3r6n6nNVssVWVKRLq2NabAe2buF1rSXihYhLNi6WElxAyPy9uZ1EbY3PHbaZ4DqMgOdAL55DdaD2GbgxHJH3m3G_Os3vKARXSHA8-XYu2998iejoqSk8JwLz6j2cz3nRzzj5CUL_qxj3UhJE5fk4EtMSIPItrVb_p8WfZtK0EGBclraoV4UxwpuDVbf6vsFYTja1gIF5YHFdDJ5o2cykU')">
+                                </div>
+                            </div>
+                            <p>Trusted by <span class="font-bold text-white">50,000+</span> drivers worldwide</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="px-6 py-24 lg:px-20 bg-[#0b0f17]">
+                <div class="max-w-[1280px] mx-auto">
+                    <div
+                        class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 text-center md:text-left">
+                        <div class="max-w-2xl mx-auto md:mx-0">
+                            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-4">
+                                Everything you need to manage your vehicle's life cycle.
+                            </h2>
+                            <p class="text-lg text-gray-400">
+                                Powerful tools designed for car enthusiasts and daily commuters alike.
+                            </p>
+                        </div>
+                        <a class="text-primary font-bold hover:text-primary/80 inline-flex items-center gap-1 shrink-0"
+                            href="roadmap.html">
+                            View all features <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div
+                            class="group bg-[#151c2a] p-8 rounded-2xl shadow-sm border border-gray-800 hover:shadow-xl hover:border-primary/20 transition-all duration-300">
+                            <div
+                                class="size-14 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">analytics</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Analytics</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Deep insights into your driving habits, fuel efficiency, and maintenance costs over
+                                time.
+                            </p>
+                        </div>
+                        <div
+                            class="group bg-[#151c2a] p-8 rounded-2xl shadow-sm border border-gray-800 hover:shadow-xl hover:border-primary/20 transition-all duration-300">
+                            <div
+                                class="size-14 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">account_balance_wallet</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Digital Wallet</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Store registration, insurance, and service records digitally. Never lose a receipt
+                                again.
+                            </p>
+                        </div>
+                        <div
+                            class="group bg-[#151c2a] p-8 rounded-2xl shadow-sm border border-gray-800 hover:shadow-xl hover:border-primary/20 transition-all duration-300">
+                            <div
+                                class="size-14 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">shield_lock</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Privacy First</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                Bank-grade encryption keeps your sensitive vehicle data and location history yours
+                                alone.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-background-dark border-t border-gray-800">
+            <div class="px-6 py-12 lg:px-20 max-w-[1280px] mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-3xl text-primary">local_taxi</span>
+                        <span class="text-lg font-bold text-white">CarVault Inc.</span>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-8">
+                        <a class="text-gray-400 text-sm hover:text-primary transition-colors" href="#">Privacy
+                            Policy</a>
+                        <a class="text-gray-400 text-sm hover:text-primary transition-colors" href="#">Terms of
+                            Service</a>
+                        <a class="text-gray-400 text-sm hover:text-primary transition-colors" href="about.html">Contact
+                            Us</a>
+                    </div>
+                    <div class="flex gap-4">
+                        <a class="text-gray-400 hover:text-primary transition-colors" href="#">
+                            <span class="sr-only">Twitter</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="text-gray-400 hover:text-primary transition-colors" href="#">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-8 text-center text-sm text-gray-400">
+                    © 2024 CarVault Inc. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('menuBtn').addEventListener('click', function () {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

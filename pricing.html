@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Early Adopter Pricing & Perks | CarVault</title>
+    <meta name="description"
+        content="Join the elite group of car enthusiasts securing lifetime vehicle management perks at zero cost.">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+    <header class="absolute top-0 z-50 w-full border-b border-white/10 bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="text-white">
+                        <svg class="size-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-white">CarVault</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium text-white/90 hover:text-white transition-colors"
+                        href="index.html">Home</a>
+                    <a class="text-sm font-medium text-white/90 hover:text-white transition-colors"
+                        href="roadmap.html">Updates</a>
+                    <a class="text-sm font-medium text-white transition-colors" href="pricing.html">Pricing</a>
+                    <a class="text-sm font-medium text-white/90 hover:text-white transition-colors"
+                        href="about.html">About</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button class="px-4 py-2 text-sm font-semibold text-white/90 hover:text-white transition-colors">Log
+                        In</button>
+                    <button id="claimSpotBtn"
+                        class="bg-primary text-white px-5 py-2 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:bg-blue-700 transition-all">Claim
+                        Spot</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="relative min-h-[70vh] flex items-center pt-20 overflow-hidden bg-slate-900">
+            <div class="absolute inset-0 z-0">
+                <img alt="Modern luxury car in urban setting" class="w-full h-full object-cover opacity-60"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMHfOVeZngv5iguJG1liOkPI-H8l2r8p92c9sGHeoMRe777WBNCUISSVJdYL1rsmrByL6QtGV9a-6Ezr31l7eHjoRXqA4DuSLFzTxkGCgal_rahoZXyYTyxc_TUCHvb65_EDX6mjiZ8SrKiap9uBoQmMo1Ff1SnGC6KGqPr1HC8zMSCPStBUVPJSpgchmCThCQFnV122uqF2qLFedXHtb6ImaoMpllanoONemPd9QF7o-xZz96ZHYeaQyr4RIbjV5-evDAQrKBYpI" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/40 to-background-light dark:to-background-dark">
+                </div>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-24">
+                <div class="text-center">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/20 backdrop-blur-md border border-primary/30 text-white text-xs font-bold uppercase tracking-widest mb-8">
+                        <span class="relative flex h-2 w-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                        </span>
+                        Limited Early Adopter Access
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+                        Drive the Future <span class="text-primary">for Free.</span>
+                    </h1>
+                    <p class="text-xl text-slate-200 mb-10 max-w-2xl mx-auto leading-relaxed">
+                        Join the elite group of car enthusiasts securing lifetime vehicle management perks at zero cost.
+                        Unlock advanced AI diagnostics before the public launch.
+                    </p>
+                    <div
+                        class="max-w-md mx-auto bg-white/10 backdrop-blur-xl p-6 rounded-2xl border border-white/20 shadow-2xl">
+                        <div class="flex justify-between items-end mb-3">
+                            <span class="text-sm font-bold text-white">Early Bird Slots Available</span>
+                            <span class="text-sm font-bold text-primary" id="slotsCount">820 / 1,000</span>
+                        </div>
+                        <div class="h-2 w-full bg-white/20 rounded-full overflow-hidden">
+                            <div class="h-full bg-primary rounded-full transition-all duration-1000" id="progressBar"
+                                style="width: 82%;"></div>
+                        </div>
+                        <div class="flex items-center justify-center gap-2 mt-4 text-sm text-slate-300">
+                            <span class="material-symbols-outlined text-base">timer</span>
+                            <span>Program ends in: <span class="font-bold text-white"
+                                    id="countdown">04:22:58</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-white dark:bg-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Why Join the Early Adopter Program?</h2>
+                    <p class="text-slate-600 dark:text-slate-400">Unlock features normally reserved for our Premium
+                        Enterprise tier at absolutely no cost, forever.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div
+                        class="p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-background-light dark:bg-slate-900/30 hover:border-primary/50 transition-all group">
+                        <div
+                            class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined">health_and_safety</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">AI Vehicle Health Monitoring</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Our proprietary AI connects with your vehicle's telemetry to predict failures before they
+                            happen, saving you thousands in repairs.
+                        </p>
+                        <div class="mt-4 inline-flex items-center text-primary text-xs font-bold gap-1">
+                            FREE FOREVER <span class="material-symbols-outlined text-sm">verified</span>
+                        </div>
+                    </div>
+                    <div
+                        class="p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-background-light dark:bg-slate-900/30 hover:border-primary/50 transition-all group">
+                        <div
+                            class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined">headset_mic</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Priority Concierge Support</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Skip the queue. Early adopters get a dedicated 24/7 direct line to our certified vehicle
+                            experts for any technical or mechanical advice.
+                        </p>
+                        <div class="mt-4 inline-flex items-center text-primary text-xs font-bold gap-1">
+                            PRIORITY ACCESS <span class="material-symbols-outlined text-sm">verified</span>
+                        </div>
+                    </div>
+                    <div
+                        class="p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-background-light dark:bg-slate-900/30 hover:border-primary/50 transition-all group">
+                        <div
+                            class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined">rocket_launch</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Beta Feature Labs</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Be the first to test our 'Valuation Tracker' and 'Carbon Footprint Calculator' modules
+                            months before they go public.
+                        </p>
+                        <div class="mt-4 inline-flex items-center text-primary text-xs font-bold gap-1">
+                            LIFETIME BETA <span class="material-symbols-outlined text-sm">verified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 relative overflow-hidden bg-background-light dark:bg-background-dark">
+            <div class="absolute inset-0 bg-primary/5 -skew-y-3 origin-right"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                <div class="max-w-xl mx-auto">
+                    <div
+                        class="relative bg-white dark:bg-slate-900 rounded-3xl p-8 sm:p-12 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] border-2 border-primary">
+                        <div
+                            class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-lg">
+                            Most Exclusive Tier
+                        </div>
+                        <div class="text-center mb-10">
+                            <h3 class="text-2xl font-bold mb-2">Early Adopter</h3>
+                            <div class="flex items-baseline justify-center gap-1">
+                                <span class="text-5xl font-extrabold text-slate-900 dark:text-white">$0</span>
+                                <span class="text-slate-500 font-medium">/lifetime</span>
+                            </div>
+                            <p class="text-slate-500 text-sm mt-4">No credit card required to claim</p>
+                        </div>
+                        <ul class="space-y-4 mb-10">
+                            <li class="flex items-center gap-3 text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary font-bold">check_circle</span>
+                                <span>Advanced AI Diagnostics</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary font-bold">check_circle</span>
+                                <span>24/7 Priority Support Access</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary font-bold">check_circle</span>
+                                <span>Unlimited Vehicle Profiles</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary font-bold">check_circle</span>
+                                <span>Lifetime Early Beta Access</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-700 dark:text-slate-300">
+                                <span class="material-symbols-outlined text-primary font-bold">check_circle</span>
+                                <span>Digital Maintenance Vault</span>
+                            </li>
+                        </ul>
+
+                        <!-- Early Adopter Signup Form -->
+                        <form id="earlyAdopterForm" class="space-y-4">
+                            <input type="email" id="signupEmail" name="email" required
+                                class="w-full px-4 py-3 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary text-sm dark:bg-slate-800"
+                                placeholder="Enter your email address">
+                            <button type="submit"
+                                class="w-full bg-primary text-white py-4 rounded-xl text-lg font-bold shadow-lg shadow-primary/30 hover:bg-blue-700 hover:shadow-xl transition-all active:scale-95">
+                                Claim Free Spot Now
+                            </button>
+                        </form>
+                        <p id="signupSuccess" class="hidden mt-4 text-green-600 text-sm font-medium text-center">✓
+                            You're in! Check your email for next steps.</p>
+
+                        <div class="mt-6 flex items-center justify-center gap-2 text-xs text-slate-400">
+                            <span class="material-symbols-outlined text-sm">lock</span>
+                            Secure encrypted signup process
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-12 border-t border-slate-200 dark:border-slate-800">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="flex items-center gap-2">
+                <div class="text-slate-400">
+                    <svg class="size-6" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+                <span class="text-lg font-bold text-slate-400 tracking-tight">CarVault</span>
+            </div>
+            <div class="flex gap-8">
+                <a class="text-sm text-slate-500 hover:text-primary" href="#">Privacy</a>
+                <a class="text-sm text-slate-500 hover:text-primary" href="#">Terms</a>
+                <a class="text-sm text-slate-500 hover:text-primary" href="about.html">Contact</a>
+            </div>
+            <p class="text-xs text-slate-400">© 2024 CarVault. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown timer
+        function updateCountdown() {
+            const now = new Date();
+            const endOfDay = new Date(now);
+            endOfDay.setHours(23, 59, 59, 999);
+            const diff = endOfDay - now;
+
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown').textContent =
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Google Sheets form submission
+        const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL';
+
+        document.getElementById('earlyAdopterForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const successMsg = document.getElementById('signupSuccess');
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Claiming...';
+
+            const formData = {
+                email: form.signupEmail.value,
+                type: 'Early Adopter Signup',
+                timestamp: new Date().toISOString()
+            };
+
+            try {
+                if (GOOGLE_SCRIPT_URL === 'YOUR_GOOGLE_APPS_SCRIPT_URL') {
+                    console.log('Form data (demo mode):', formData);
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                } else {
+                    await fetch(GOOGLE_SCRIPT_URL, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(formData)
+                    });
+                }
+                successMsg.classList.remove('hidden');
+                form.reset();
+
+                // Update progress bar animation
+                const currentSlots = 821;
+                document.getElementById('slotsCount').textContent = `${currentSlots} / 1,000`;
+                document.getElementById('progressBar').style.width = `${(currentSlots / 1000) * 100}%`;
+            } catch (error) {
+                console.error('Error:', error);
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Claim Free Spot Now';
+            }
+        });
+
+        // Scroll to form on button click
+        document.getElementById('claimSpotBtn').addEventListener('click', function () {
+            document.getElementById('earlyAdopterForm').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>
