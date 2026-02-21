@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>About the Creator | CarVault</title>
-    <meta name="description" content="Meet Pamudu Ranasinghe, the creator of CarVault - your vehicle's digital twin.">
+    <title>Feedback & Feature Requests - CarVault</title>
+    <meta name="description"
+        content="We value your feedback. Submit feature requests, report bugs, or share your thoughts to help us improve CarVault.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -99,101 +100,32 @@
         }
 
         main {
-            max-width: 760px;
+            max-width: 680px;
             margin: 0 auto;
             padding: 52px 32px;
         }
 
-        .page-title {
+        .page-header {
+            margin-bottom: 32px;
+        }
+
+        .page-header h1 {
             font-size: 2.2rem;
             font-weight: 700;
             margin-bottom: 10px;
         }
 
-        .page-desc {
+        .page-header p {
             color: #555;
-            margin-bottom: 40px;
-            font-style: italic;
             font-size: 1.05rem;
         }
 
-        .card {
+        .form-card {
             border: 1px solid #e5e7eb;
             border-radius: 12px;
             padding: 32px;
-            margin-bottom: 28px;
             background: #fff;
-            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
-            border-color: #d1d5db;
-        }
-
-        .card h2 {
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-
-        .card p {
-            color: #555;
-            margin-bottom: 18px;
-            font-size: 1rem;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 24px;
-            border-radius: 10px;
-            font-size: 1rem;
-            font-weight: 600;
-            text-decoration: none;
-            background: #0077b5;
-            color: #fff;
-            transition: all 0.2s ease;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            background: #006097;
-            text-decoration: none;
-        }
-
-        .tech-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 12px;
-        }
-
-        .tech-tag {
-            background: #e5e7eb;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            color: #333;
-            font-weight: 500;
-        }
-
-        /* Contact Form */
-        .form-section {
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
-            padding: 24px;
-            margin-bottom: 24px;
-        }
-
-        .form-section h2 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
         }
 
         .form-group {
@@ -253,11 +185,24 @@
             background: #1d4ed8;
         }
 
-        .success-msg {
+        .msg {
             display: none;
-            color: #16a34a;
-            margin-top: 12px;
+            margin-top: 14px;
+            padding: 12px 16px;
+            border-radius: 6px;
             font-size: 0.9rem;
+        }
+
+        .msg-success {
+            background: #d1fae5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+        }
+
+        .msg-error {
+            background: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #fca5a5;
         }
 
         footer {
@@ -266,6 +211,7 @@
             text-align: center;
             color: #777;
             font-size: 0.95rem;
+            margin-top: 40px;
         }
 
         footer .footer-links {
@@ -293,6 +239,10 @@
                 display: block;
             }
 
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
             header {
                 padding: 14px 20px;
             }
@@ -306,8 +256,7 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="roadmap.html">Updates</a>
-            <a href="feedback.html">Feedback</a>
-            <a href="about.html" class="active">About</a>
+            <a href="feedback.html" class="active">Feedback</a>
         </nav>
         <button id="menuBtn" onclick="toggleMenu()">☰</button>
     </header>
@@ -317,66 +266,46 @@
             <a href="index.html">Home</a>
             <a href="roadmap.html">Updates</a>
             <a href="feedback.html">Feedback</a>
-            <a href="about.html">About</a>
         </nav>
     </div>
 
     <main>
-        <h1 class="page-title">Pamudu Ranasinghe</h1>
-        <p class="page-desc">"I built CarVault because I struggled to manage my own vehicle data effectively and needed
-            a
-            better solution."</p>
-
-        <div class="card">
-            <h2>The Visionary Mindset</h2>
-            <p>As a developer and automotive enthusiast, I saw a gap between technical possibility and everyday utility.
-                CarVault is the result of applying clean design principles and robust engineering to solve a personal
-                pain point that millions of car owners share.</p>
-            <a href="#" class="btn">LinkedIn</a>
+        <div class="page-header">
+            <h1>Feedback & Feature Requests</h1>
+            <p>Help us shape the future of CarVault. Share your ideas, report issues, or just let us know what you
+                think.</p>
         </div>
 
-        <div class="card">
-            <h2>Built with Modern Excellence</h2>
-            <p>Core technologies used in CarVault:</p>
-            <div class="tech-list">
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">AWS</span>
-                <span class="tech-tag">Figma</span>
-                <span class="tech-tag">Tailwind CSS</span>
-            </div>
-        </div>
-
-        <div class="form-section">
-            <h2>Get in Touch</h2>
-            <form id="contactForm">
+        <div class="form-card">
+            <form id="featureRequestForm">
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="contactName">Name</label>
-                        <input type="text" id="contactName" name="name" required placeholder="Your name">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
                     </div>
                     <div class="form-group">
-                        <label for="contactEmail">Email</label>
-                        <input type="email" id="contactEmail" name="email" required placeholder="your@email.com">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="contactSubject">Subject</label>
-                    <select id="contactSubject" name="subject">
-                        <option value="General Inquiry">General Inquiry</option>
-                        <option value="Partnership">Partnership Opportunity</option>
-                        <option value="Press">Press / Media</option>
-                        <option value="Support">Technical Support</option>
+                    <label for="type">Request Type</label>
+                    <select id="type" name="type">
+                        <option value="Feature Request">Feature Request</option>
+                        <option value="Bug Report">Bug Report</option>
+                        <option value="Feedback">General Feedback</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="contactMessage">Message</label>
-                    <textarea id="contactMessage" name="message" rows="4" required
-                        placeholder="How can we help you?"></textarea>
+                    <label for="message">Your Idea or Issue</label>
+                    <textarea id="message" name="message" rows="5" required
+                        placeholder="Describe your feature request, bug, or feedback in detail..."></textarea>
                 </div>
-                <button type="submit" class="btn-submit">Send Message</button>
-                <p id="contactSuccess" class="success-msg">✓ Message sent successfully! We'll get back to you soon.</p>
+                <button type="submit" class="btn-submit">Submit Request</button>
             </form>
+            <div id="formSuccess" class="msg msg-success">✓ Thank you! Your request has been submitted successfully.
+            </div>
+            <div id="formError" class="msg msg-error">✕ Something went wrong. Please try again later.</div>
         </div>
     </main>
 
@@ -384,7 +313,6 @@
         <div class="footer-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
-            <a href="about.html">Contact Us</a>
         </div>
         © 2026 CarVault Inc. All rights reserved.
     </footer>
@@ -396,21 +324,23 @@
 
         const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL';
 
-        document.getElementById('contactForm').addEventListener('submit', async function (e) {
+        document.getElementById('featureRequestForm').addEventListener('submit', async function (e) {
             e.preventDefault();
             const form = e.target;
             const submitBtn = form.querySelector('button[type="submit"]');
-            const successMsg = document.getElementById('contactSuccess');
+            const successMsg = document.getElementById('formSuccess');
+            const errorMsg = document.getElementById('formError');
 
+            successMsg.style.display = 'none';
+            errorMsg.style.display = 'none';
             submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending...';
+            submitBtn.textContent = 'Submitting...';
 
             const formData = {
-                name: form.contactName.value,
-                email: form.contactEmail.value,
-                subject: form.contactSubject.value,
-                message: form.contactMessage.value,
-                type: 'Contact Form',
+                name: form.name.value,
+                email: form.email.value,
+                type: form.type.value,
+                message: form.message.value,
                 timestamp: new Date().toISOString()
             };
 
@@ -418,6 +348,8 @@
                 if (GOOGLE_SCRIPT_URL === 'YOUR_GOOGLE_APPS_SCRIPT_URL') {
                     console.log('Form data (demo mode):', formData);
                     await new Promise(resolve => setTimeout(resolve, 1000));
+                    successMsg.style.display = 'block';
+                    form.reset();
                 } else {
                     await fetch(GOOGLE_SCRIPT_URL, {
                         method: 'POST',
@@ -425,14 +357,15 @@
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(formData)
                     });
+                    successMsg.style.display = 'block';
+                    form.reset();
                 }
-                successMsg.style.display = 'block';
-                form.reset();
             } catch (error) {
-                console.error('Error:', error);
+                console.error('Form submission error:', error);
+                errorMsg.style.display = 'block';
             } finally {
                 submitBtn.disabled = false;
-                submitBtn.textContent = 'Send Message';
+                submitBtn.textContent = 'Submit Request';
             }
         });
     </script>
