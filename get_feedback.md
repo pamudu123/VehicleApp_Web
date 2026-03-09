@@ -66,9 +66,3 @@ const GOOGLE_SCRIPT_URL = 'YOUR_NEW_WEB_APP_URL_HERE';
 ```
 
 Once you save the file, any new feedback submitted through the form on your website will automatically appear as a new row in your Google Sheet!
-
-Deployment ID
-AKfycbxMgy96ErVQJaiHi4LHvqyYWhL_aL7T2Ne1wf33NSJhaTb6Beiwfr-mGtcMgm60QP96BA
-
-URL
-https://script.google.com/macros/s/AKfycbxMgy96ErVQJaiHi4LHvqyYWhL_aL7T2Ne1wf33NSJhaTb6Beiwfr-mGtcMgm60QP96BA/exec
